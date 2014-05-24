@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iOS | Bryce Zhang]]></title>
+  <link href="http:///blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http:///"/>
+  <updated>2014-05-24T20:26:05+08:00</updated>
+  <id>http:///</id>
+  <author>
+    <name><![CDATA[Bryce Zhang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CocoaPods版本升级]]></title>
+    <link href="http:///blog/2014/04/19/title/"/>
+    <updated>2014-04-19T19:44:47+08:00</updated>
+    <id>http:///blog/2014/04/19/title</id>
+    <content type="html"><![CDATA[<p>和往常一样使用<a href="http://cocoapods.org/">CocoaPods</a>管理一个基于<a href="https://github.com/ccgus/fmdb">FMDB</a>的项目类库</p>
+
+<p>命令行执行</p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="error">$</span> pod install
+[!] <span class="constant">The</span> <span class="string"><span class="delimiter">'</span><span class="content">master</span><span class="delimiter">'</span></span> repo requires <span class="constant">CocoaPods</span> <span class="float">0.32</span>.<span class="error">1</span> - 
+</pre></div>
+</div>
+</div>
+<p>失败，提示需要CocoaPods 0.32.1版本</p>
+
+<p>查看CocoaPods版本</p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="error">$</span> pod --version
+<span class="float">0.29</span>.<span class="error">0</span>
+</pre></div>
+</div>
+</div>
+<p>确实需要更新了</p>
+
+<h4 id="section">命令行更新步骤</h4>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="error">$</span> sudo gem update --system <span class="regexp"><span class="delimiter">/</span><span class="delimiter">/</span></span> 先更新gem，国内需要切换源
+<span class="error">$</span> gem sources --remove <span class="key">https</span>:<span class="regexp"><span class="delimiter">/</span><span class="delimiter">/</span></span>rubygems.org/
+<span class="error">$</span> gem sources -a <span class="key">http</span>:<span class="regexp"><span class="delimiter">/</span><span class="delimiter">/</span></span>ruby.taobao.org/
+<span class="error">$</span> gem sources -l
+*** <span class="constant">CURRENT</span> <span class="constant">SOURCES</span> ***
+<span class="key">http</span>:<span class="regexp"><span class="delimiter">/</span><span class="delimiter">/</span></span>ruby.taobao.org/
+<span class="error">$</span> sudo gem install cocoapods <span class="regexp"><span class="delimiter">/</span><span class="delimiter">/</span></span> 安装cocoapods
+<span class="error">$</span> pod setup
+</pre></div>
+</div>
+</div>
+<p>和安装过程是一样的，再次查看版本</p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="error">$</span> pod --version
+<span class="float">0.32</span>.<span class="error">1</span>
+</pre></div>
+</div>
+</div>
+<p>Done!!</p>
+]]></content>
+  </entry>
+  
+</feed>
