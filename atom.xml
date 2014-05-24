@@ -4,7 +4,7 @@
   <title><![CDATA[Bryce Zhang]]></title>
   <link href="http:///atom.xml" rel="self"/>
   <link href="http:///"/>
-  <updated>2014-05-24T20:26:05+08:00</updated>
+  <updated>2014-05-24T21:12:59+08:00</updated>
   <id>http:///</id>
   <author>
     <name><![CDATA[Bryce Zhang]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[CocoaPods版本升级]]></title>
-    <link href="http:///blog/2014/04/19/title/"/>
+    <link href="http:///blog/2014/04/19/cocoapodsban-ben-sheng-ji/"/>
     <updated>2014-04-19T19:44:47+08:00</updated>
-    <id>http:///blog/2014/04/19/title</id>
+    <id>http:///blog/2014/04/19/cocoapodsban-ben-sheng-ji</id>
     <content type="html"><![CDATA[<p>和往常一样使用<a href="http://cocoapods.org/">CocoaPods</a>管理一个基于<a href="https://github.com/ccgus/fmdb">FMDB</a>的项目类库</p>
 
 <p>命令行执行</p>
